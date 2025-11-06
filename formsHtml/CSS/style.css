@@ -1,5 +1,5 @@
 body {
-  background: url(./4194.jpg);
+  background: url(Screenshot 2025-11-05 234234.png);
   background-size: cover;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 #formHeading {
-  color: blue;
+  color:black;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@ body {
 .formFeild {
   margin: 20px;
   label {
-    color: blueviolet;
+    color: aqua;
     font-size: large;
   }
 
@@ -35,7 +35,7 @@ body {
     padding: 10px;
     border-radius: 25px;
     border: 2px solid black;
-    outline-color: blueviolet;
+    outline-color: gray;
   }
 }
 
@@ -71,11 +71,11 @@ body {
 }
 
 #cancelButton:active {
-  background-color: blue;
+  background-color:brown;
   color: aliceblue;
 }
 
 #loginButton:active {
-  background-color: blue;
+  background-color: brown;
   color: aliceblue;
 }

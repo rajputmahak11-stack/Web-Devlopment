@@ -1,0 +1,50 @@
+    
+    
+    
+    #dabba{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border: 1px solid #000;
+        animation: movingDabba 4s linear ; 
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    @keyframes movingDabba {
+        0%
+        {
+            top: 0px;
+            left: 0px;
+            background-color: red;
+        }
+        25%
+        {
+            top: 0px;
+            left: 500px;
+            background-color: yellow;
+        }
+         50%
+        {
+            top: 500px;
+            left: 500px;
+            background-color: green;
+        }
+        75%
+        {
+            top: 500px;
+            left: 0px;
+            background-color: blue;
+        }
+         100%
+        {
+            top: 0px;
+            left: 0px;
+            background-color: red;
+        }
+
+
+        
+    }

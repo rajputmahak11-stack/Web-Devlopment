@@ -1,0 +1,94 @@
+
+ h1 {
+  width: 200px;
+  border: 1px solid #000;
+ 
+}
+
+h1:hover
+{
+  width: 400px;
+  
+}
+#MainDiv
+{
+ width: 500px;
+  height: 50px;
+ border: 1px solid #000;
+ 
+}
+#InnerDiv{
+  width: 0%;
+  height: 50px;
+  background-color: red;
+}
+
+#MainDiv:hover{
+   #InnerDiv
+   {
+    width: 100%;
+    background-color: green;
+    transition: width 5s ease-in-out,background-color 5s ease-in-out;
+  }
+}
+#D1{
+ 
+  border: 1px solid red;
+  width: fit-content;
+  position: relative;
+}
+#d1{
+  background-color: white;
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  height: 0%;
+  display: none;
+  
+}
+
+#D1:hover{
+  #d1{
+    display: block;
+    height: 77px;
+   opacity: 100%;
+   transition: height 0.3s;
+
+  }
+}
+
+#MainDiv1
+{
+ width: 500px;
+  height: 50px;
+ border: 1px solid #000;
+ 
+}
+#InnerDiv1{
+ 
+  height: 50px;
+  
+}
+
+#MainDiv1:hover{
+   #InnerDiv1
+   {
+    animation:  myAnimation 5s linear;
+  }
+}
+  @keyframes myAnimation
+   {
+    0%{
+      width: 0%;
+      background-color: red;
+    }
+    50%{
+      width: 50%;
+      background-color: burlywood;
+    }
+     100%{
+      width: 100%;
+      background-color: green;
+    }    
+  }
+

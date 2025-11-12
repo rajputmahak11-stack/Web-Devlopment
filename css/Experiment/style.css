@@ -1,0 +1,31 @@
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}
+.bg.pink{
+    background-color: pink;
+}
+.bg.violet{
+    background-color: violet;
+}
+.bg.green{
+    background-color: greenyellow;
+}
+.bg.blue{
+    background-color: skyblue;
+}
+.font-large{
+    font-size: large;
+}
+
+.font-xx-large{
+    font-size: xx-large;
+}
+.font-small{
+    font-size: small;
+}

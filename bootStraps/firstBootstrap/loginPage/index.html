@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Registeration Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-primary">
+    r
+    <div class="container d-flex gap-5 pt-5 mt-5 align-items-end">
+      <!-- login form -->
+      <div class="container bg-light rounded shadow p-4 " >
+        <h2 class="pb-4">
+          <span class="text-decoration-underline text-primary"
+            >Lo<span class="text-dark"></span>gin</span
+          >
+        </h2>
+        <div class="border-bottom border-dark my-3 py-lg-2 d-flex align-items-center gap-3">
+          
+          <div>
+        <i class="bi bi-envelope"></i>
+            <input type="email" name="email" id="email" class="bg-transparent border-0" placeholder="Enter your email">
+            </div>   
+            <div>
+            <i class="bi bi-lock"></i>
+            <input type="password" name="password" id="password" class="bg-transparent border-0" placeholder="Confirm a password">
+            <i class="bi bi-eye"></i>
+            </div>
+          
+           <span>Remember me</span>
+           <a href="#" class="text-decoration-none ">Forget Passwor</a>
+       
+        <button class="btn btn-primary w-50" id="loginButton" onclick="">Login now</button>
+      </div>
+      registeration form
+      <div class="container">
+        <div>
+            <i class="bi bi-lock"></i>
+            <input type="text">
+        </div>
+      </div>
+      <button class="btn btn-primary w-100" id="registerationButton" onclick="">Register now</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

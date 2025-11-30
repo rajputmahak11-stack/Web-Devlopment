@@ -5,7 +5,6 @@ if (img === "http://127.0.0.1:5500/javaScript/ImageEditor/index.html") {
 }
 
 
-
 // let bright = 1;
 // let contrast = 1;
 // let saturate = 1;
@@ -27,6 +26,9 @@ if (img === "http://127.0.0.1:5500/javaScript/ImageEditor/index.html") {
 //         hue-rotate(${hue}deg)
 //     `;
 // }
+
+
+
 
 
 

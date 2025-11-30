@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="bulb">Bulb</div>
+    <button onclick="on()">on</button>
+    <button onclick="off()">off</button>
+    <button onclick="red()">Red</button>
+    <button onclick="blue()">Blue</button>
+    <button onclick="black()">Black</button>
+    <input type="color" name="color" id="color" />
+
+    <br />
+    <hr />
+
+    <div id="smartBulb">Smart Bulb</div>
+    <br />
+    <button onclick="SB_Control()" id="SB_btn">On</button>
+
+    <button onclick="SB_Control2()">On/Off</button>
+   
+
+    <br />
+    <hr />
+
+    <div
+    id="box"
+    style="width: 500px; height: 500px; border: 2px solid black; padding: 10px"
+  >
+    <h3 id="heading">This is the heading</h3>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+      nostrum, aspernatur repellat quis deserunt laboriosam distinctio corporis
+      reprehenderit, nemo deleniti laborum! Iusto maiores omnis hic quibusdam
+      sit est eum repudiandae.
+    </p>
+  
+
+  <h4>
+    Background:
+    <input type="color" id="bgColor" />
+  </h4>
+
+  <h4>
+    Heading:
+    <input type="color" id="headingColor" />
+  </h4>
+
+  <h4>
+    Paragraph:
+    <input type="color" id="paraColor" />
+  </h4>
+    </div>
+</div>
+
+     <script src="script.js"></script>
+  </body>
+</html>

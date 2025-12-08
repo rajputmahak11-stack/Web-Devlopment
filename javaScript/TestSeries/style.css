@@ -1,0 +1,24 @@
+body 
+{
+    padding-top: 70px;
+    font-family: Arial;
+}
+
+.home-box 
+{
+    text-align: center;
+    padding: 80px 20px;
+    background-color: lightblue;
+}
+
+.basic-card
+ {
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.basic-card:hover 
+{
+    background-color: #f1f1f1;
+}
+

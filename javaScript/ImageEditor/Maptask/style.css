@@ -1,0 +1,15 @@
+body { font-family: sans-serif; padding: 20px; }
+    input, button {
+      font-size: 16px;
+      padding: 6px 10px;
+      border-radius: 5px;
+      border: 1px solid #888;
+    }
+    button { background: #2563eb; color: white; border: none; cursor: pointer; }
+    .map-box { position: relative; display: inline-block; margin-top: 15px; }
+    .map-box img { width: 600px; }
+    .flag-pin {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      font-size: 32px;
+    }

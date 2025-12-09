@@ -1,15 +1,58 @@
-body { font-family: sans-serif; padding: 20px; }
-    input, button {
-      font-size: 16px;
-      padding: 6px 10px;
-      border-radius: 5px;
-      border: 1px solid #888;
-    }
-    button { background: #2563eb; color: white; border: none; cursor: pointer; }
-    .map-box { position: relative; display: inline-block; margin-top: 15px; }
-    .map-box img { width: 600px; }
-    .flag-pin {
-      position: absolute;
-      transform: translate(-50%, -100%);
-      font-size: 32px;
-    }
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Search + Buttons Container */
+.controls {
+  margin-bottom: 10px;
+}
+
+input, button {
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Map container — keeps pins INSIDE */
+.map-box {
+  position: relative;        /* THIS keeps coordinates relative to map */
+  display: inline-block;
+  overflow: hidden;          /* THIS prevents flags from going outside */
+  margin-top: 15px;
+}
+
+/* Map image */
+.map-box img {
+  width: 1074px;             /* You said: 1074×1307 */
+  height: 1307px;
+  display: block;            /* prevents extra space below image */
+}
+
+/* Flag / Marker Pin */
+.flag-pin {
+  position: absolute;
+  font-size: 22px;
+  transform: translate(-50%, -100%);  /* sits ABOVE the exact point */
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Optional Dot Marker (if you prefer dots) */
+.flag-pin.dot {
+  width: 16px;
+  height: 16px;
+  background: red;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 0;
+}

@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+/* input/button layout */
+.controls {
+  margin-bottom: 10px;
+}
+input, button {
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* map container: ensure flags never show outside */
+.map-box {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  overflow: hidden;    /* <- prevents flags escaping the map */
+}
+
+/* keep image block-level so its exact size is used */
+.map-box img {
+  width: 1074px;       /* use your rendered width */
+  height: 1307px;      /* use your rendered height */
+  display: block;
+}
+
+/* flag style */
+.flag-pin {
+  position: absolute;
+  font-size: 20px;
+  transform: translate(-50%, -50%); /* perfectly centered on coordinate */
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* optional small red dot version (use class "dot" on flag-pin) */
+.flag-pin.dot {
+  width: 14px;
+  height: 14px;
+  background: red;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 0;
+}

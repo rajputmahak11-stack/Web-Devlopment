@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Map Basic</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container py-4">
+
+  <h3 class="text-center fw-bold mb-3">India Map – State Search</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" id="searchBox" class="form-control mb-3" placeholder="Search state…">
+
+      <ul class="list-group" id="stateList"></ul>
+    </div>
+
+    <div class="col-md-8 text-center">
+      <div class="map-container">
+        <img src="Map (1).jpg" class="img-fluid" id="indiaMap">
+
+        <div id="marker" class="marker"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
